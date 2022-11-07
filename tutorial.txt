@@ -15,3 +15,11 @@
 8:configurar flex\directions de buttons e de line como 'row'
 
 9: passar vetores para col1 e col2 pra renderizar na tela com o .map()
+
+LÓGICA
+
+10:criar um useState(), e uma função handleOp() pra setar 
+
+11: configurar o TouchableOpacity
+
+12: passar o evento onPress(() => {handleOp}) nos componentes TouchableOpacity que estão no .map()
