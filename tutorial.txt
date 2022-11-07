@@ -4,4 +4,14 @@
 
 3:preparar App.js pra começar a desenvolver
 
-4:
+4: desenvolver o Layout de acordo com a estilização em flex. 
+
+5: Envolver toda a aplicação na tag<View> com o styke container.
+
+6: Passar o display e o result e os buttons onde a soma dos 3 dar 6.3, 5 para buttons e 1 para display e 0.3 para result
+
+7:  dentro de buttons parra col1 que será os botões de numeração e col2 com botões de operações
+
+8:configurar flex\directions de buttons e de line como 'row'
+
+9: passar vetores para col1 e col2 pra renderizar na tela com o .map()
