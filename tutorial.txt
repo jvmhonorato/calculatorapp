@@ -1,0 +1,7 @@
+1 install react-native: create-react-native-app <nome do app>
+
+2: executar o expo Go no android  : expo start
+
+3:preparar App.js pra começar a desenvolver
+
+4:
