@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { StyleSheet, Text, View, TouchableOpacity, TextInput, TextInputComponent } from 'react-native';
+import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 
 export default function App() {
  
@@ -21,28 +21,29 @@ export default function App() {
         setDisplay('')
         setResult('')
       }else if(op === '='){
-        setResult(display)
-        result
+        setResult('')
+        setDisplay(result)
       }else{
+        const dp = display + op
+        let rt = result
+        try{
+          
+          let fixedOperation = dp.split('X').join('*')
+          fixedOperation = fixedOperation.split('÷').join('/')
+          rt = new String(eval(fixedOperation))
+        }catch(e){
+
+        }
         setDisplay(
-          display + op
+          dp, rt
           )
+          setResult(
+            rt
+          )
+          
       }
      }
 
-    //  const handleInput = (op) => {
-    //   if(op === 'C'){
-    //     setDisplay({display: ''})
-    //   }else{
-    //     setDisplay(
-    //       display +  op
-         
-    //     )
-    //   }
-    //   console.log(op)
-    
-      
-    //  }
 
 
 
