@@ -16,20 +16,33 @@ export default function App() {
   ]
   const col2Buttons = ['C','÷','X','-','+']
  
-    const handleOp = (op) => {
-      setDisplay({
-        display:  op,
-        result: op
-      })
-     
+    const handleInput = (op) => {
+      if(op === 'C'){
+        setDisplay('')
+        setResult('')
+      }else if(op === '='){
+        setResult(display)
+        result
+      }else{
+        setDisplay(
+          display + op
+          )
+      }
      }
-     const handleInput = (buttonPressed) => {
-      console.log(buttonPressed)
-      setDisplay(
-        display +  buttonPressed
-       
-      )
-     }
+
+    //  const handleInput = (op) => {
+    //   if(op === 'C'){
+    //     setDisplay({display: ''})
+    //   }else{
+    //     setDisplay(
+    //       display +  op
+         
+    //     )
+    //   }
+    //   console.log(op)
+    
+      
+    //  }
 
 
 
@@ -54,7 +67,7 @@ export default function App() {
          </View>
          <View style={styles.col2}>
            {col2Buttons.map( op =>
-             <TouchableOpacity style={styles.btn} >
+             <TouchableOpacity style={styles.btn} onPress={() => {handleInput(op)}} >
               <Text value={result} key={op} style={styles.btnText}>
                {op}
               </Text> 
