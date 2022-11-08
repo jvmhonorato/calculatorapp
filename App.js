@@ -30,6 +30,7 @@ export default function App() {
           
           let fixedOperation = dp.split('X').join('*')
           fixedOperation = fixedOperation.split('÷').join('/')
+          fixedOperation = fixedOperation.split(',').join('.')
           rt = new String(eval(fixedOperation))
         }catch(e){
 
@@ -110,7 +111,7 @@ const styles = StyleSheet.create({
   },
   col1:{
     flex:3,
-    backgroundColor:'grey'
+    backgroundColor:'#000000'
   },
   line: {
     flex:1,
@@ -123,10 +124,11 @@ const styles = StyleSheet.create({
   },
   btnText: {
     textAlign:'center',
-    fontSize:50
+    fontSize:50,
+    color:'white'
   },
   col2:{
     flex:1,
-    backgroundColor:'red'
+    backgroundColor:'#0b0b0b'
   }
 });
