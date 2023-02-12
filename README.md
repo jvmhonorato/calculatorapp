@@ -26,13 +26,22 @@ Here are the technologies used in this project.
   
   
 * To install the dependencies.
-  - npm install
+```bash
+$  npm install
+```
+  
   
 * To run the project.
-  - expo start
+```bash
+$ expo start
+```
+  
 
 * Upgrade Expo
-  - expo update <current version> .0.0 
+```bash
+$ expo update <current version> .0.0 
+```
+  
   
   
 ## How to use
